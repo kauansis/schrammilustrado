@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Feed.css">
+    <style>
+        .feedback-container {
+            margin-top: 80px; /* Ajuste para garantir que o conteúdo não fique escondido atrás da navbar fixa */
+        }
+
+        .feedback-item {
+            background-color: #f8f9fa; /* Cor de fundo suave */
+            border-radius: 8px; /* Bordas arredondadas */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            height: 100%; /* Faz com que todos os itens tenham a mesma altura */
+            display: flex;
+            flex-direction: column;
+            border-left: 5px solid #FFD700; /* Amarelo ouro */
+        }
+
+        .feedback-content {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+
+        .feedback-image {
+            width: 100px; /* Largura da imagem */
+            height: 100px; /* Altura da imagem */
+            object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+            border-radius: 50%; /* Torna a imagem redonda */
+        }
+
+        .feedback-text {
+            color: #333; /* Cor do texto para legibilidade */
+            flex-grow: 1; /* Faz com que o texto ocupe o espaço restante */
+        }
+
+        .feedback-title {
+            color: #003366; /* Azul escuro para os títulos */
+            margin-bottom: 15px; /* Espaçamento abaixo do título */
+        }
+
+        .feedback-item + .feedback-item {
+            margin-top: 20px; /* Espaço entre feedbacks */
+        }
+
+        /* Geral */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f8ff; /* Azul claro */
+          color: #333; /* Texto cinza escuro */
+        }
+    
+        h1, h2, h3, h4, h5, h6 {
+          color: #003366; /* Azul escuro */
+        }
+    
+        /* Navbar */
+        .navbar {
+          background-color: #003366; /* Azul escuro */
+        }
+    
+        .navbar-brand {
+          color: #FFD700; /* Amarelo ouro */
+          font-weight: bold;
+        }
+    
+        .navbar-nav .nav-link {
+          color: #FFD700; /* Amarelo ouro */
+        }
+    
+        .navbar-nav .nav-link.active {
+          color: #ffffff; /* Branco para link ativo */
+        }
+    
+        .navbar-toggler-icon {
+          background-color: #FFD700; /* Amarelo ouro para o ícone do menu */
+        }
+    
+        /* Carousel */
+        .carousel-item img {
+          object-fit: cover; /* Faz com que a imagem cubra o contêiner */
+          height: 25em;
+        }
+    
+        /* Cards */
+        .card {
+          border: 1px solid #003366; /* Azul escuro */
+          border-radius: 0.5rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        .card-img-top {
+          border-bottom: 2px solid #003366; /* Azul escuro */
+        }
+    
+        .card-body {
+          background-color: #ffffff;
+        }
+    
+        .text-blue {
+          color: #003366; /* Azul escuro */
+        }
+    
+        .btn-custom {
+          background-color: #003366; /* Azul escuro */
+          color: #FFD700; /* Amarelo ouro */
+          border: none;
+        }
+    
+        .btn-custom:hover {
+          background-color: #002244; /* Azul mais escuro */
+          color: #ffffff; /* Branco */
+        }
+    
+        /* Contato e Sobre */
+        .map-image {
+          max-width: 100%;
+          border-radius: 0.5rem;
+        }
+    
+        nav {
+          background-color: #003366; /* Azul escuro */
+          color: #ffffff;
+          padding: 2rem;
+        }
+    
+        nav h1, nav h6 {
+          color: #FFD700; /* Amarelo ouro */
+        }
+    
+        .text-center {
+          margin: 2rem 0;
+        }
+    
+        .container {
+          margin-top: 2rem;
+        }
+    
+        /* Footer (Se tiver um) */
+        footer {
+          background-color: #003366; /* Azul escuro */
+          color: #ffffff;
+          padding: 2rem;
+          text-align: center;
+        }
+
+      </style>
+      <style>
+        .back-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: #007bff; /* Azul */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3; /* Azul escuro */
+        }
+    </style>
+    
+
+</head>
+<body>
+    <a href="index.html" class="back-button">Voltar ao Menu</a>
+    <div class="container feedback-container">
+        <br>    
+        <h1 class="text-center mb-4">Feedback de Clientes</h1>
+        <div class="row">
+          <!-- Primeiro feedback -->
+          <div class="col-md-4 mb-4">
+            <div class="feedback-item">
+              <div class="feedback-content">
+                <img src="./clientes/escritorio.jpg" alt="Imagem do cliente 1" class="feedback-image">
+                <div class="feedback-text">
+                  <h3 class="feedback-title">Escritório Corporativo XYZ</h3>
+                  <p>"A equipe fez um trabalho maravilhoso na limpeza do nosso escritório. A diferença foi notável, e o ambiente está muito mais agradável para todos. Recomendo fortemente!<br>Nome do cliente: Júlia Costa<br>Data do depoimento: 15 de junho de 2024"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segundo feedback -->
+          <div class="col-md-4 mb-4">
+            <div class="feedback-item">
+              <div class="feedback-content">
+                <img src="./clientes/residencia.jpg" alt="Imagem do cliente 2" class="feedback-image">
+                <div class="feedback-text">
+                  <h3 class="feedback-title">Residência da Família Silva</h3>
+                  <p>"Estou muito satisfeita com o serviço de limpeza realizado em minha casa. A equipe foi extremamente profissional e detalhista. Meu lar nunca esteve tão limpo e organizado!<br>Nome do cliente: Ana Silva<br>Data do depoimento: 22 de julho de 2024"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Terceiro feedback -->
+          <div class="col-md-4 mb-4">
+            <div class="feedback-item">
+              <div class="feedback-content">
+                <img src="./clientes/restaurante.jpg" alt="Imagem do cliente 3" class="feedback-image">
+                <div class="feedback-text">
+                  <h3 class="feedback-title">Restaurante Gourmet Delícias</h3>
+                  <p>"Após a reforma em nosso restaurante, a limpeza pós-obra foi essencial. A empresa fez um trabalho excelente, e conseguimos reabrir para os nossos clientes sem nenhum problema. Muito obrigado pelo ótimo trabalho!<br>Nome do cliente: Ricardo Almeida<br>Data do depoimento: 05 de agosto de 2024"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Quarto feedback -->
+          <div class="col-md-4 mb-4">
+            <div class="feedback-item">
+              <div class="feedback-content">
+                <img src="./clientes/hotel.jpg" alt="Imagem do cliente 4" class="feedback-image">
+                <div class="feedback-text">
+                  <h3 class="feedback-title">Hotel Luxo e Conforto</h3>
+                  <p>"O serviço de limpeza oferecido foi excelente. A equipe foi muito atenciosa e deixou nossos quartos impecáveis. Definitivamente, recomendaremos a empresa a outros hotéis.<br>Nome do cliente: Marcos Almeida<br>Data do depoimento: 12 de setembro de 2024"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Quinto feedback -->
+          <div class="col-md-4 mb-4">
+            <div class="feedback-item">
+              <div class="feedback-content">
+                <img src="./clientes/escola.jpg" alt="Imagem do cliente 5" class="feedback-image">
+                <div class="feedback-text">
+                  <h3 class="feedback-title">Escola Infantil Aprender Brincando</h3>
+                  <p>"Estamos extremamente satisfeitos com o serviço de limpeza na nossa escola. A equipe foi muito profissional e garantiu um ambiente limpo e seguro para nossas crianças.<br>Nome do cliente: Sandra Lima<br>Data do depoimento: 20 de setembro de 2024"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">Desenvolvido por Kauan Schramm</p>
+    </footer>
+</body>
+</html>

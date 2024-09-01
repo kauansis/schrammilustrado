@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+}
+
+h4 {
+    margin-left: 70px; /* Ajuste o valor conforme necessário */
+}
+
+h3 {
+    text-align: right;
+    margin-right: 270px;
+}
+
+
+.map-image {
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 30px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -290px;
+    margin-left: 680px
+}
+
+h6 {
+    margin-left: 30px;
+}
+
+h5 {
+    text-align: left;
+}
+
+.img-lucas {
+    height: 390px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção e cubra o espaço sem distorção */
+}
+
+.img-resi {
+    height: 180px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção e cubra o espaço sem distorção */
+
+}
+
+.img-kaike {
+    height: 370px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção e cubra o espaço sem distorção */
+}
+
+body {
+    background-color: #dddd0f; /* Amarelo claro */
+}
+
+.text-blue {
+    color: #007bff; /* Azul padrão Bootstrap */
+  }
+
+  
+.btn-custom {
+    display: inline-block;
+    padding: 1rem; /* Ajuste o tamanho conforme necessário */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold;
+    color: #fff; /* Cor do texto */
+    background-color: #28a745; /* Verde para o fundo */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 0; /* Remove os cantos arredondados */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para efeito */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para mudanças de estado */
+  }
+  
+  .btn-custom:hover,
+  .btn-custom:focus {
+    background-color: #218838; /* Verde mais escuro para o hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+    text-decoration: none; /* Garante que não haja sublinhado no hover */
+  }

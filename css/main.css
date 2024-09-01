@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+}   
+
+.social-icon {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.contato {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.contato h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contato-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contato-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+body {
+    background-color: #FFFFE0; /* Amarelo claro */
+}
+
+.img-fluid {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+  }
+  
+  /* Adiciona uma margem ao redor do contêiner da seção */
+  .container {
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+  }
+  
+  /* Garante que o botão esteja centralizado */
+  .text-center {
+    text-align: center;
+  }
+
+  .btn-custom {
+    display: inline-block;
+    padding: 10px 20px; /* Ajuste o tamanho conforme necessário */
+    background-color: #28a745; /* Verde */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0; /* Faz o botão quadrado */
+    border: 2px solid transparent;
+  }
+  
+  .btn-custom:hover {
+    background-color: #218838; /* Tom mais escuro de verde para hover */
+    border-color: #1e7e34;
+  }
+

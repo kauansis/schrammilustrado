@@ -1,0 +1,195 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- Link para o seu CSS -->
+    <style>
+        body {
+            background-color: #eefd9a; /* Amarelo claro */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .info-list {
+            margin-top: 10px;
+        }
+        
+        .info-list li {
+            margin-bottom: 5px;
+        }
+        
+        .img-container {
+            margin-bottom: 20px;
+        }
+        
+        /* Estilos internos para o link de voltar */
+        .back-link {
+            position: fixed;
+            top: 30px; /* Distância do topo */
+            left: 25px; /* Distância da esquerda */
+            z-index: 1000; /* Garante que o link fique acima de outros elementos */
+            background-color: #f8f9fa; /* Cor de fundo para o link */
+            padding: 5px 10px; /* Espaçamento interno para o link */
+            border: 1px solid #ddd; /* Borda ao redor do link */
+            border-radius: 5px; /* Bordas arredondadas */
+            text-decoration: none; /* Remove sublinhado */
+            color: #007bff; /* Cor do texto do link */
+            font-weight: bold; /* Negrito para o texto */
+        }
+        
+        .back-link:hover {
+            color: #0056b3; /* Cor ao passar o mouse */
+        }
+        
+        /* CSS personalizado */
+        .contato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 370px; /* Ajuste conforme necessário */
+            height: auto; /* Permite que a altura seja ajustada automaticamente */
+            margin-bottom: 20px;
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 220px; /* Ajuste conforme necessário */
+            border: none;
+        }
+        
+        .contato-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .contato-info p {
+            margin: 10px 0;
+        }
+        
+        .redes-sociais {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+        
+        /* Media Queries para responsividade */
+        @media (max-width: 768px) {
+            .video-container {
+                max-width: 100%;
+            }
+            
+            .social-icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .back-link {
+                top: 10px;
+                left: 10px;
+                padding: 3px 6px;
+                font-size: 14px;
+            }
+            
+            .video-container iframe {
+                height: 180px;
+            }
+            
+            .social-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">Voltar</a>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <h1>Informações de Contato</h1>
+        <div class="contato-info">
+            <p><strong>Nome do CEO:</strong> Kauan Schramm</p>
+            <p><strong>Nome da Empresa:</strong> Schramm Ilustrer</p>
+            <p><strong>Email:</strong> <a href="mailto:contato@schrammilustrer.com">kauanschramm05@gmail.com</a></p>
+            <p><strong>Telefone:</strong> (49) 3321-8000</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/554933218000" target="_blank">Caso tenha interesse em nosso trabalho, CLIQUE AQUI, ou nos ícones abaixo para entrar em contato!</a></p>
+            <div class="redes-sociais">
+                <a href="https://facebook.com/schrammilustrer" target="_blank">
+                    <img src="./logo/face.jpg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://instagram.com/kauan_schramm" target="_blank">
+                    <img src="./logo/inst.jpg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="mailto:kauanschramm@gmail.com">
+                    <img src="./logo/gmail.jpg" alt="Gmail" class="social-icon">
+                </a>
+                <a href="https://wa.me/5547988155353" target="_blank" class="whatsapp-link">
+                    <img src="./logo/wats.jpg" alt="WhatsApp" class="social-icon">
+                </a>
+            </div>
+        </div>
+        <div class="video-container">
+            <!-- Substitua o src pelo código de incorporação do seu vídeo -->
+            <iframe src="https://www.youtube.com/embed/jdRi2LLVFAE?si=UcUxzbj7aep0aCvF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- Outras seções do seu site -->
+    <div class="container">
+        <!-- Linha para imagens -->
+        <div class="row">
+            <!-- Imagem 1 -->
+            <div class="col-md-4 img-container">
+                <img src="./logo/posobra.png" class="img-fluid" alt="Imagem 1">
+                <ul class="list-unstyled info-list">
+                    <li><strong>Preço:</strong> R$ 100</li>
+                    <li><strong>Horário:</strong> 8:00 - 18:00</li>
+                    <li><strong>Descrição:</strong> Preço pode variar dependendo do tamanho do espaço, para mais informações entre em contato.</li>
+                </ul>
+            </div>
+            <!-- Imagem 2 -->
+            <div class="col-md-4 img-container">
+                <img src="./logo/residencial.png" class="img-fluid" alt="Imagem 2">
+                <ul class="list-unstyled info-list">
+                    <li><strong>Preço:</strong> R$ 150</li>
+                    <li><strong>Horário:</strong> 10:00 - 17:00</li>
+                    <li><strong>Descrição:</strong> Preço pode variar dependendo do tamanho do espaço, para mais informações entre em contato.</li>
+                </ul>
+            </div>
+            <!-- Imagem 3 -->
+            <div class="col-md-4 img-container">
+                <img src="./logo/comercial.png" class="img-fluid" alt="Imagem 3">
+                <ul class="list-unstyled info-list">
+                    <li><strong>Preço:</strong> R$ 200</li>
+                    <li><strong>Horário:</strong> 11:00 - 16:00</li>
+                    <li><strong>Descrição:</strong> Preço pode variar dependendo do tamanho do espaço, para mais informações entre em contato.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <a href="serviços2.html" class="btn btn-custom">Solicitar Orçamento</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <br>
+    <footer class="footer">
+        <p class="footer-text">Desenvolvido por Kauan Schramm</p>
+    </footer>
+</body>
+</html>
